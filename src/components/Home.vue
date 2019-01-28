@@ -14,9 +14,8 @@
                     <Timeline :id="'bgarlinghouse'" :sourceType="'profile'" :options="{ tweetLimit: '2' }"/>  
                 </div>
                 </div>
-
                 <div class="col s12 m5 push-m1">
-                <Body/>  
+                <Body/> 
                 </div>      
             </div>
         </div>
@@ -33,8 +32,6 @@ export default {
         Timeline
 
     }
-
- 
 };
 </script>
 

@@ -1,17 +1,12 @@
 <template>
   <div id="app">
-
-
     <div class="container">
-      <div>
-        <Header class="blue darken-1 white-text"/>
-      </div>
+        <Header/>
       <RouterView></RouterView>
     </div>
-
-  <div>
-    <Docs/>
-  </div>
+    <div>
+      <Docs/>
+    </div>
   </div>
 </template>
 
