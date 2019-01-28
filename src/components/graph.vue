@@ -41,10 +41,6 @@ export default {
                 });
                 console.log('hello', this.accounts);
             });
-
-        
-        
-    
     }
 };
 </script>

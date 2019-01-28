@@ -1,13 +1,15 @@
 <template>
-    <div>
-        <h1>
-            This is a page about Ripple Stats
-        </h1>
-        <nav class="nav">
-            <RouterLink class="link" to="/" >Home</RouterLink>
-            <RouterLink class="link" to="/docs" >Docs</RouterLink>
-        </nav>
-    </div>
+    <section>
+        <div id="logo">
+            <img src="../../assets/logo.png" alt="logo"> 
+        </div>
+        <div>
+            <nav class="nav">
+                <RouterLink class="link" to="/" >Home</RouterLink>
+                <RouterLink class="link" to="/docs" >Docs</RouterLink>
+            </nav>
+        </div>
+</section>
 </template>
 
 <script>
@@ -17,16 +19,12 @@ export default {
 </script>
 
 <style>
-h1 {
-    padding-top: 20px;
-}
 .nav {
-  background-color: #ffffff !important;
-
+    border-bottom: 5px solid white;
 }
 .link {
     text-align: center;
-    color: black;
+    color: white;
     padding-right: 80px;
 }
 
