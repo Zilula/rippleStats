@@ -4,8 +4,13 @@
             <p id="quote">“It’s time to bring the banking
 system out of the 1970s.”</p>
         </div>
+        
         <div class="introDiv">
+            <ul>
+                <li>
             <p id="introHead">INTRO HEAD ASDASD ADASD AADSASD ASD ASD ADS AD ADDASDAD</p>
+                </li>
+                <li>
             <p id="introBody">"Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit,
                 sed do eiusmod tempor 
@@ -16,6 +21,8 @@ system out of the 1970s.”</p>
                 laboris nisi ut aliquip ex ea 
                 commodo consequat.      
             </p>
+                </li>
+            </ul>
         </div>
         <div id="video">
             
@@ -37,7 +44,18 @@ export default {
  h2 {
      color: white;
  }
- .quoteDiv {
+ ul {
+     color: white;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+ }
+ li {
+
+ }
+
+
+/* 
+  .quoteDiv {
     display: flex;
     justify-content: flex-end
 }
@@ -47,13 +65,11 @@ export default {
      flex-direction: row;
      justify-content: left;
      max-width: 60%;
- }
- .introDiv {
+ } */
+ #introBody {
     color: white;
-    display: flex;
-    justify-content: flex-start;
-    max-width: 30%;
-    display: block;
- }
+    align-items: center;
+    margin-top: 100px;
+ } 
 
 </style>
