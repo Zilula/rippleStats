@@ -1,6 +1,6 @@
 <template>
     <section>
-            <img src="./../assets/logo.png" alt="">
+            <img src="./../assets/SVGlogo.svg" alt="">
             <nav class="nav">
                 <RouterLink class="link" to="/" >Home</RouterLink>
                 <RouterLink class="link" to="/docs" >Docs</RouterLink>
@@ -20,10 +20,11 @@ section {
     flex-direction: row;
 }
 .nav {
-    align-content: flex-end;
+    display: flex;
+    align-content: center;
     background: transparent;
-    border-bottom: 5px solid white;
-    width: 50%
+    border-bottom: 2px solid white;
+    width: 45%;
 }
 .link {
     text-align: center;
@@ -32,7 +33,9 @@ section {
     font-size: 20px;
 }
 img {
-    width: 20%;
+    display: block;
+    width: 80px;
+    height: 80px;
 }
 
 </style>
