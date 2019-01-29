@@ -1,10 +1,12 @@
 <template>
     <section>
+        <header>
             <img src="./../assets/SVGlogo.svg" alt="">
-            <nav class="nav">
-                <RouterLink class="link" to="/" >Home</RouterLink>
-                <RouterLink class="link" to="/docs" >Docs</RouterLink>
-            </nav>
+        <nav class="nav">
+            <RouterLink class="link" to="/" >Home</RouterLink>
+            <RouterLink class="link" to="/docs" >Docs</RouterLink>
+        </nav>
+        </header>
 </section>
 </template>
 
@@ -15,11 +17,16 @@ export default {
 </script>
 
 <style>
+header {
+    display: inline-block;
+    padding: 50px;
+}
 section {
     display: flex;
     flex-direction: row;
 }
 .nav {
+    margin-top: 21px; 
     display: flex;
     align-content: center;
     background: transparent;
@@ -33,7 +40,10 @@ section {
     font-size: 20px;
 }
 img {
-    display: block;
+    /* display: block; */
+    /* margin-bottom: 200px; */
+    margin: 5px;
+    float: left;
     width: 80px;
     height: 80px;
 }
