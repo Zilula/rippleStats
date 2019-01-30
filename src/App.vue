@@ -1,12 +1,7 @@
 <template>
   <div id="app">
-    <div class="container">
         <Header/>
       <RouterView></RouterView>
-    </div>
-    <div>
-      <Docs/>
-    </div>
   </div>
 </template>
 

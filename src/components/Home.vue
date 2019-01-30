@@ -25,10 +25,18 @@ system out of the 1970s.”</p>
             </ul>
         </div>
         <div id="video">
-            
+            <img src="./../assets/xrplogo.jpeg"/>
         </div>
-
-
+        <div id="missionStatement">
+            <p>
+                sfsd fsfsfdds fsdf s df sdf sdf s df sdf sd fs df sdf sdf 
+                 sdfsf sdf sdf s df sf s dfs df sdf s df sdf s fds df sdf 
+                  sdf s dfs df sdf sdf s dfs df sdf s fd sdf sdf sd f sf sf 
+                  sd fs df sdf sfd sf ds fd sdf fd d sdffddsfsdfs dfs df sdf sdf
+                  sdfsfdsdf sdf sdf sd fs df sdf sfd sdsdfsfdsdf sdfsdfsdf sfd
+                  
+            </p>
+        </div>
     </div>
 </template>
 
@@ -40,36 +48,20 @@ export default {
 };
 </script>
 
-<style>
- h2 {
-     color: white;
- }
- ul {
-     color: white;
-     display: grid;
-     grid-template-columns: repeat(2, 1fr);
- }
- li {
-
- }
-
-
-/* 
-  .quoteDiv {
-    display: flex;
-    justify-content: flex-end
+<style scoped>
+p {
+    color: white;
 }
- #quote {
+
+ul {
      color: white;
-     font-size: 25px;
-     flex-direction: row;
-     justify-content: left;
-     max-width: 60%;
- } */
+}
  #introBody {
     color: white;
-    align-items: center;
-    margin-top: 100px;
- } 
+} 
+img {
+    width: 300px;
+    height: 300px;
+}
 
 </style>
