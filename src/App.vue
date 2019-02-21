@@ -18,6 +18,8 @@ export default {
 <style>
 
 body {
-  background-color: black;
+  background-image: url('./assets/background.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 </style>

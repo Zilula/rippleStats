@@ -18,8 +18,7 @@
              </li>
              <li>
                 <div class="quoteDiv">
-                    <p id="quote">“It’s time to bring the banking
-        system out of the 1970s.”</p>
+                    <Carousel/>
                 </div>
              </li>
              <li>
@@ -45,10 +44,12 @@
 
 <script>
 import VueYoutube from './Youtube';
+import Carousel from './Carousel';
 
 export default {
     components: {
-        VueYoutube
+        VueYoutube,
+        Carousel
     }
 };
 </script>

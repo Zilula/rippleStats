@@ -2,7 +2,9 @@
     <li>
         <div>
             <h3> {{document.title}}</h3>
-            <p>{{document.url}}</p>
+            <p>{{document.author}}</p>
+            <p>{{document.date}}</p>
+            <a>{{document.url}} </a>
         </div>
     </li>
 </template>
@@ -17,10 +19,16 @@ export default {
 </script>
 
 <style>
-h3
+
 li {
     position: relative;
     margin: 10px;
+    color: white
+} 
+a {
+    color: white
 }
+
+
 
 </style>
