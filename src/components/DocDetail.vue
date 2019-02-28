@@ -1,11 +1,9 @@
 <template>
     <li>
-        <div>
-            <h3> {{document.title}}</h3>
-            <p>{{document.author}}</p>
-            <p>{{document.date}}</p>
-            <a>{{document.url}} </a>
-        </div>
+        <h3> {{document.title}}</h3>
+        <p>{{document.author}}</p>
+        <p>{{document.date}}</p>
+        <a>{{document.url}} </a>
     </li>
 </template>
 
@@ -23,10 +21,12 @@ export default {
 li {
     position: relative;
     margin: 10px;
-    color: white
+    color: white;
 } 
 a {
-    color: white
+    color: white;
+    /* width: 30%; */
+    overflow-wrap: break-word;
 }
 
 
