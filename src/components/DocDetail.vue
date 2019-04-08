@@ -1,9 +1,9 @@
 <template>
     <li>
-        <h3> {{document.title}}</h3>
-        <p>{{document.author}}</p>
-        <p>{{document.date}}</p>
-        <a>{{document.url}} </a>
+        <h3 id="title"> {{document.title}}</h3>
+        <p>Publisher: {{document.author}}</p>
+        <p>Date: {{document.date}}</p>
+        <a :href="document.url">{{document.url}} </a>
     </li>
 </template>
 
@@ -16,18 +16,30 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 
 li {
+    background-color: #aac8f7;
+    opacity: 60%;
     position: relative;
     margin: 10px;
-    color: white;
+    color:black;
+    border-radius: 1em;
+    overflow-wrap: break-word;
+
 } 
+
+p {
+    margin: 1em;
+}
+h3 {
+    margin: 1em;
+}
 a {
     color: white;
-    /* width: 30%; */
-    overflow-wrap: break-word;
+    margin: 1em;
 }
+
 
 
 

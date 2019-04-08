@@ -1,6 +1,6 @@
 <template>
 <div>
-    <h3>
+    <h3 id="title">
         Below are a list of documents and publications that I have found valuable on the new world order. 
     </h3>
     <DocList
@@ -24,8 +24,8 @@ export default {
 };
 </script>
 
-<style>
-h3 {
+<style scoped>
+#title {
     color: white;
 }
 
