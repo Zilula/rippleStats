@@ -22,9 +22,6 @@
 </template>
 
 <script>
-// import VueYoutube from './Youtube';
-// import Carousel from './Carousel';
-
 import customIcon from 'vue-icon/lib/vue-feather.esm';
 export default {
     components: {
