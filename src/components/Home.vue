@@ -10,14 +10,27 @@
 
           <div id="content">
               <ul>
-                  <li>
+                  <li id="c1">
                       <h3>Partnerships</h3>
+                      <p>View the connections Ripple Labs has made.</p>
                   </li>
-                  <li>Some content in panel 2</li>
-                  <li> Some content in panel 3</li>
-                  <li> Some content in panel 4</li>
+                  <li id="c2"> 
+                      <h3>Technology</h3>
+                      <p>Learn what makes Ripple different from it`s competitors</p>
+                  </li>
+                  <li id="c3">
+                       <h3>Hyper-Ledger</h3>
+                       <p>How banks can benefite from Hyper-ledger use.</p>
+                  </li>
+                  <li id="c4"> 
+                        <h3>Statistics</h3>
+                        <p>View data about the XRP ledger</p>
+                  </li>
               </ul>
           </div>
+          <h2>
+              Join the community and learn how Ripple labs are transforming the global payment industry.  
+          </h2>
     </div>
 </template>
 
@@ -60,21 +73,51 @@ export default {
         color: white;
         margin-left: 40vw;
         margin-top: 2em;
+        margin-bottom: 2em;
         border: solid white 1px;
         border-radius: 100%
     }
     ul {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-gap: .2em;
     list-style-type: none;
     margin: .5em auto .5em auto;
     padding-inline-start: 0px;
 
     }
     li {
-        background-color: red;
+        height: 10em;
     }
+    h3 {
+        font-size: 1.2em;
+        font-weight: 900;
+        margin-left: .4em;
+        color: white;
+        background-color:rgba(128, 128, 128, 0.619)    
+    }
+    p {
+        display: none;
+        font-size:1.3em;
+        margin-left: .4em;
+        color:black;
+        background-color:rgba(255, 255, 255, 0.646);
+    }
+    #c1 {
+        background-image: url('../assets/c1.jpg');
+        background-size: cover;
+        }
+    #c2 {
+        background-image: url('../assets/c2.jpeg');
+        background-size: cover;
+        }
+    #c3 {
+        background-image: url('../assets/c3.jpg');
+        background-size: cover;
+        }
+    #c4 {
+        background-image: url('../assets/c4.png');
+        background-size: cover;
+        }
 }
 
 
