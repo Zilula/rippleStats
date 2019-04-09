@@ -39,8 +39,15 @@
             </p>
             <p class="community">
                 Connect with other enthusiest or developers via <a href="https://twitter.com/Ripple?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Ripple`s</a> Twitter.
+                <img src="../assets/Twitter_Bird.svg" alt="Twitter logo linking to Ripple`s twitter" width=40% height=40%>
             </p>
-
+            <p class="community">
+                <span>Are you a Developer?</span>
+                Checkout Ripple`s incredibly developer friendly API.
+                <a href="https://developers.ripple.com/index.html">Ripple`s API</a>  
+                <img src="../assets/devIcon.png" alt="Random Icon that is the html or JS angle brackets."
+                width=40% height=40%>            
+            </p>
         </div>
     </div>
 </template>
@@ -130,7 +137,17 @@ export default {
         background-size: cover;
         }
     .community {
-        margin: 2em;
+        text-align: center;
+        color: white;
+        margin: 1.2em;
+        padding-top: .7em;
+        display: block;
+        border-radius: .5em;
+    }
+    img {
+        display: block;
+        margin: .5em auto .1em auto;
+        padding-bottom: .5em;
     }
 }
 
