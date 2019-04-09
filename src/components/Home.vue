@@ -28,9 +28,20 @@
                   </li>
               </ul>
           </div>
-          <h2>
+        <h2>
               Join the community and learn how Ripple labs are transforming the global payment industry.  
-          </h2>
+        </h2>
+        <div>
+            <p class="community">
+                Join the conversation at <a href="https://www.xrpchat.com/">XrpChat.com</a>.
+            <img src="../assets/rippleLogo.png" alt="Ripple Logo"
+            width=40% height=40%>
+            </p>
+            <p class="community">
+                Connect with other enthusiest or developers via <a href="https://twitter.com/Ripple?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Ripple`s</a> Twitter.
+            </p>
+
+        </div>
     </div>
 </template>
 
@@ -96,7 +107,7 @@ export default {
         background-color:rgba(128, 128, 128, 0.619)    
     }
     p {
-        display: none;
+        /* display: none; */
         font-size:1.3em;
         margin-left: .4em;
         color:black;
@@ -118,6 +129,9 @@ export default {
         background-image: url('../assets/c4.png');
         background-size: cover;
         }
+    .community {
+        margin: 2em;
+    }
 }
 
 
