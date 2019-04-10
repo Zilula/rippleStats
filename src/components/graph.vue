@@ -70,6 +70,16 @@ export default {
 </script>
 
 <style>
+@media (max-width: 376px) {
+    #wrapper {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-column-gap: 2em;
+        margin: 2em;
+    }
+    .graph { max-width: 90vw;}
+    
+}
 #wrapper {
     display: flex;
     grid-template-columns: 30% 30% 30%;

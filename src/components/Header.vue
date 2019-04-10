@@ -23,6 +23,9 @@ export default {
 </script>
 
 <style scoped>
+section {
+    margin: 5em;
+}
 .link {
     color:white;
     font-size: 2em;
