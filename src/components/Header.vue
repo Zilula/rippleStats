@@ -1,18 +1,24 @@
 <template>
     <section>
         <header>
-        <nav class="nav">
-            <RouterLink class="link" to="/" >Home</RouterLink>
-            <RouterLink class="link" to="/docs" >Docs</RouterLink>
-            <RouterLink class="link" to="/charts" >Charts</RouterLink>
-        </nav>
+            <nav class="nav">
+                <Slide>
+                    <RouterLink class="link" to="/" >Home</RouterLink>
+                    <RouterLink class="link" to="/docs" >Documents</RouterLink>
+                    <RouterLink class="link" to="/charts" >Charts</RouterLink>
+                </Slide>
+            </nav>
         </header>
-</section>
+    </section>
 </template>
 
 <script>
-export default {
+import { Slide } from 'vue-burger-menu';  // import the CSS transitions you wish to use, in this case we are using `Slide`
 
+export default {
+    components: {
+        Slide // Register your component
+    }
 };
 </script>
 
@@ -21,12 +27,16 @@ export default {
     header {
         display:flex;
         margin: auto;
+        color: white;
     }
-    nav {
-        font-size: 1.5em;
-        margin: .5em auto .5em auto;
-        
+    .link {
+        color: white;
+        font-size: 2em;
     }
+
+    .bm-burger-bars {
+    color: white;
+}
 }
 
 </style>

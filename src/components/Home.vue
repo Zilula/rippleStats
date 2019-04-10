@@ -66,9 +66,10 @@ export default {
 };
 </script>
 
-
 <style scoped>
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 @media (min-width: 375px) {
     #app {
         font-family:'Montserrat', sans-serif;
@@ -84,7 +85,6 @@ export default {
         text-align: center;
         color: rgb(205, 198, 198);
         margin-top: 2em;
-
     }
     .custom-icon {
         width: 3em;
@@ -111,7 +111,7 @@ export default {
         font-weight: 900;
         margin-left: .4em;
         color: white;
-        background-color:rgba(128, 128, 128, 0.619)    
+        background-color:rgba(128, 128, 128, 0.324)    
     }
     p {
         /* display: none; */
@@ -150,8 +150,6 @@ export default {
         padding-bottom: .5em;
     }
 }
-
-
 </style>
 
 
