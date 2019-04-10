@@ -23,20 +23,8 @@ export default {
 </script>
 
 <style scoped>
-@media (min-width: 300px) {
-    header {
-        display:flex;
-        margin: auto;
-        color: white;
-    }
-    .link {
-        color: white;
-        font-size: 2em;
-    }
-
-    .bm-burger-bars {
-    color: white;
+.link {
+    color:white;
+    font-size: 2em;
 }
-}
-
 </style>
