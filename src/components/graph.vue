@@ -86,6 +86,7 @@ export default {
     grid-column-gap: 1em;
 }
 .graph {
+    max-width: 90vw;
     max-width: 30em;
     background-color: rgb(187, 187, 187);
     border-radius: .5em;
