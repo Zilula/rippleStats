@@ -1,34 +1,38 @@
 <template>
      <div id="app">
          <h1>
-             The future of banking.
+             The Standard.
          </h1>
+         <Carousel/>
          <h2>       
-            Why? The payment infrastructure was built before the Internet with few updates.
+            <span id="why">
+                Why?
+            </span>
+            The payment infrastructure was built before the Internet with few updates.
          </h2>
           <custom-icon name="arrow-down" base-class="custom-icon"></custom-icon>
 
           <div id="content">
               <ul>
-                  <li id="c1">
-                      <h3>Partnerships</h3>
+                  <li id="c1" class="cube">
+                      <h3>Partnerships to form the future.</h3>
                       <p>View the connections Ripple Labs has made.</p>
                   </li>
-                  <li id="c2"> 
-                      <h3>Technology</h3>
+                  <li id="c2" class="cube"> 
+                      <h3>Technology to benefit everyone</h3>
                       <p>Learn what makes Ripple different from it`s competitors</p>
                   </li>
-                  <li id="c3">
-                       <h3>Hyper-Ledger</h3>
+                  <li id="c3" class="cube">
+                       <h3>Hyper-Ledger transparency</h3>
                        <p>How banks can benefite from Hyper-ledger use.</p>
                   </li>
-                  <li id="c4"> 
-                        <h3>Statistics</h3>
+                  <li id="c4" class="cube"> 
+                        <h3>View statistics</h3>
                         <p>View data about the XRP ledger</p>
                   </li>
               </ul>
           </div>
-        <h2>
+        <h2 id="communityHeader">
               Join the community and learn how Ripple labs are transforming the global payment industry.  
         </h2>
         <div>
@@ -54,9 +58,11 @@
 
 <script>
 import customIcon from 'vue-icon/lib/vue-feather.esm';
+import Carousel from './Carousel';
 export default {
     components: {
-        customIcon
+        customIcon,
+        Carousel
     },
     data: function() {
         return {
@@ -104,7 +110,7 @@ export default {
 
     }
     li {
-        height: 10em;
+        height: 15em;
     }
     h3 {
         font-size: 1.2em;
@@ -114,7 +120,7 @@ export default {
         background-color:rgba(128, 128, 128, 0.324)    
     }
     p {
-        /* display: none; */
+        display: none;
         font-size:1.3em;
         margin-left: .4em;
         color:black;
@@ -136,114 +142,35 @@ export default {
         background-image: url('../assets/c4.png');
         background-size: cover;
         }
+    .cube {
+        border-radius: .3em;
+    }
+    #communityHeader {
+        margin-top: 4em;
+        margin-bottom: 4em;
+    }
     .community {
         text-align: center;
         color: white;
         margin: 1.2em;
         padding-top: .7em;
         display: block;
-        border-radius: .5em;
+        border-radius: .2em;
+        background-color:black;
+    }
+    a {
+        color: white;
     }
     img {
         display: block;
         margin: .5em auto .1em auto;
         padding-bottom: .5em;
     }
+    #why {
+        font-size: 2em;
+        color: white;
+        display: block;
+        margin: 2em;
+    }
 }
 </style>
-
-
-
-
-
-
-
-
-// div {
-//     padding: 2px;
-//     margin: 2px;
-// }
-ul {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr; 
-    grid-gap: 1em;
-    justify-content: center;
-    list-style-type: none;
-}
-li:nth-child(1) {
-    grid-row: span 3;
-    align-content: center;
-    margin: auto;
-}
-// li:nth-child(2) {
-//     grid-column: span 2;
-//     grid-row: 1;
-// }
-// li:nth-child(4) {
-//     grid-column: 2;
-//     grid-row: 2;
-// }
-// ul {
-//      color: white;
-// }
-// img {
-//     width: 300px;
-//     height: 300px;
-// }
-// #introHead {
-//     font-size: 30px;
-// }
-// #introBody {
-//     font-size: 20;
-// }
-// #introDiv {
-//     justify-content: center;
-//     align-content: center;
-//     margin: auto;
-// }
-// #quote {
-//     font-size: 40px;
-// }
-
-
-
-// <ul>
-//              <li>
-//                 <div class="introDiv">
-//                     <p id="introHead">What is XRP?</p>
-//                     <p id="introBody">"Lorem ipsum dolor sit amet,
-//                         consectetur adipiscing elit,
-//                         sed do eiusmod tempor 
-//                         incididunt ut labore et dolore 
-//                         magna aliqua. Ut enim ad 
-//                         minim veniam, quis nostrud
-//                         exercitation ullamco
-//                         laboris nisi ut aliquip ex ea 
-//                         commodo consequat.      
-//                     </p>
-//                 </div>
-//              </li>
-//              <li>
-//                 <div class="quoteDiv">
-//                     <Carousel/>
-//                 </div>
-//              </li>
-//              <li>
-//                 <div id="missionStatement">
-//                     <p>
-//                         sfsd fsfsfdds fsdf s df sdf sdf s df sdf sd fs df sdf sdf 
-//                         sdfsf sdf sdf s df sf s dfs df sdf s df sdf s fds df sdf 
-//                         sdf s dfs df sdf sdf s dfs df sdf s fd sdf sdf sd f sf sf 
-//                         sd fs df sdf sfd sf ds fd sdf fd d sdffddsfsdfs dfs df sdf sdf
-//                         sdfsfdsdf sdf sdf sd fs df sdf sfd sdsdfsfdsdf sdfsdfsdf sf  
-//                     </p>
-//                 </div>
-//              </li>
-//              <li>    
-//                 <div id="video">
-//                     <VueYoutube/>
-//                     <img src="./../assets/xrplogo.jpeg"/>
-//                 </div>
-//              </li>
-//          </ul>
