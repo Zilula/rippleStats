@@ -36,22 +36,28 @@
               Join the community and learn how Ripple labs are transforming the global payment industry.  
         </h2>
         <div>
-            <p class="community">
-                Join the conversation at <a href="https://www.xrpchat.com/">XrpChat.com</a>.
-            <img src="../assets/rippleLogo.png" alt="Ripple Logo"
-            width=40% height=40%>
-            </p>
-            <p class="community">
-                Connect with other enthusiest or developers via <a href="https://twitter.com/Ripple?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Ripple`s</a> Twitter.
-                <img src="../assets/Twitter_Bird.svg" alt="Twitter logo linking to Ripple`s twitter" width=40% height=40%>
-            </p>
-            <p class="community">
-                <span>Are you a Developer?</span>
-                Checkout Ripple`s incredibly developer friendly API.
-                <a href="https://developers.ripple.com/index.html">Ripple`s API</a>  
-                <img src="../assets/devIcon.png" alt="Random Icon that is the html or JS angle brackets."
-                width=40% height=40%>            
-            </p>
+            <div class="communtityContainer">
+                <p class="community">
+                    Join the conversation at <a href="https://www.xrpchat.com/">XrpChat.com</a>.
+                </p>
+                <img src="../assets/rippleLogo.png" alt="Ripple Logo"
+                width=80% height=80%>
+            </div>
+            <div class="communtityContainer">
+                <p class="community">
+                    Connect with other enthusiest or developers via <a href="https://twitter.com/Ripple?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Ripple`s</a> Twitter.
+                </p>
+                    <img src="../assets/Twitter_Bird.svg" alt="Twitter logo linking to Ripple`s twitter" width=100% height=80%>
+            </div>
+            <div class="communtityContainer">
+                <p class="community">
+                    <span>Are you a Developer?</span>
+                    Checkout Ripple`s incredibly developer friendly API.
+                    <a href="https://developers.ripple.com/index.html">Ripple`s API</a>  
+                </p>
+                    <img src="../assets/devIcon.png" alt="Random Icon that is the html or JS angle brackets."
+                    width=80% height=80%>            
+            </div>
         </div>
     </div>
 </template>
@@ -76,6 +82,16 @@ export default {
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+/* @media (min-width: 800px) {
+    .community {
+        display: grid;
+         grid-template-columns: 50% 50%;
+    }
+} */
+  h1 {
+      color: red;
+}
+
 @media (min-width: 375px) {
     #app {
         font-family:'Montserrat', sans-serif;
@@ -95,7 +111,6 @@ export default {
     .custom-icon {
         width: 3em;
         color: white;
-        margin-left: 40vw;
         margin-top: 2em;
         margin-bottom: 2em;
         border: solid white 1px;
@@ -110,7 +125,7 @@ export default {
 
     }
     li {
-        height: 15em;
+        height: 10em;
     }
     h3 {
         font-size: 1.2em;
@@ -152,19 +167,25 @@ export default {
     .community {
         text-align: center;
         color: white;
-        margin: 1.2em;
-        padding-top: .7em;
+        margin: 1em;
+        margin-bottom: 2em;
+        padding: 1em;
         display: block;
         border-radius: .2em;
         background-color:black;
+    }
+    .communtityContainer {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        height: 10em;
     }
     a {
         color: white;
     }
     img {
+        margin: auto;
         display: block;
-        margin: .5em auto .1em auto;
-        padding-bottom: .5em;
+        /* padding-bottom: .5em; */
     }
     #why {
         font-size: 2em;
