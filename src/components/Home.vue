@@ -164,20 +164,20 @@ export default {
         margin-top: 4em;
         margin-bottom: 4em;
     }
-    .community {
-        text-align: center;
-        color: white;
-        margin: 1em;
-        margin-bottom: 2em;
-        padding: 1em;
-        display: block;
-        border-radius: .2em;
-        background-color:black;
-    }
     .communtityContainer {
         display: grid;
         grid-template-columns: 70% 30%;
         height: 10em;
+    }
+    .community {
+        text-align: center;
+        color: white;
+        margin: .5em;
+        margin-bottom: 2em;
+        padding: .5em;
+        display: block;
+        border-radius: .2em;
+        background-color:black;
     }
     a {
         color: white;
@@ -185,7 +185,6 @@ export default {
     img {
         margin: auto;
         display: block;
-        /* padding-bottom: .5em; */
     }
     #why {
         font-size: 2em;
